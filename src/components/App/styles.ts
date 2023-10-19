@@ -12,7 +12,11 @@ export const Container = styled.div`
 
 export const Image = styled.img`
   width: 100%;
-  max-width: 360px;
+  max-width: 260px;
+
+  @media (min-width: 768px) {
+    max-width: 360px;
+  }
 `;
 
 export const Title = styled.p`
