@@ -58,9 +58,15 @@ export const LinkContainer = styled.div`
 `;
 
 export const Link = styled.a`
+  /* display: block;
+  width: fit-content; */
 `;
 
 export const ButtonImg = styled.img`
   width: 100%;
   max-width: 400px;
+
+  @media (min-width: 768px) {
+    max-width: 100%;
+  }
 `;
