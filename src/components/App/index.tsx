@@ -11,6 +11,8 @@ export default function App() {
     if (!isClicked) {
       fbq('trackCustom', 'CliqueNoBotao', {clicou: 'sim'})
       setIsClicked(true)
+
+      window.location.href="https://t.me/astipsmilionarias"
     }
   };
   
@@ -21,7 +23,7 @@ export default function App() {
       <Subscriptions>4 171 subscribers</Subscriptions>
       <Description>Aqui você vai ter as melhores analises do Brasil para ganhar todos os dias 💰</Description>
       <LinkContainer>
-        <Link href="https://t.me/astipsmilionarias" aria-label="Grupo Tips Milionárias" target="_blank" onClick={handleLinkClick}>
+        <Link aria-label="Grupo Tips Milionárias" onClick={handleLinkClick}>
           <ButtonImg src={CTA} alt="Botão para Grupo Tips Milionárias" />
         </Link>
       </LinkContainer>

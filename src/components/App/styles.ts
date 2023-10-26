@@ -1,5 +1,22 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 
+const BounceInTop = keyframes`
+  0% {
+    transform: scale(1,1) translate(0px, 0px);
+  }
+  
+  30%{
+    transform: scale(1,0.9) translate(0px, 10px); 
+  }
+
+  75%{
+    transform: scale(1,1.1) translate(0px, -25px); 
+  }
+  
+  100% {
+    transform: scale(1,1) translate(0px, 0px);
+  }
+`
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
@@ -55,6 +72,8 @@ export const LinkContainer = styled.div`
   align-items: center;
   justify-content: center;
   margin-top: 16px;
+  
+	animation: ${BounceInTop} 1.1s ease-out infinite;
 
   @media (min-width: 768px) {
     justify-content: left;
@@ -62,6 +81,7 @@ export const LinkContainer = styled.div`
 `;
 
 export const Link = styled.a`
+cursor: pointer;
   /* display: block;
   width: fit-content; */
 `;
