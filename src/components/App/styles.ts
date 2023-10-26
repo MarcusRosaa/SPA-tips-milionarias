@@ -2,19 +2,19 @@ import styled, { keyframes } from 'styled-components';
 
 const BounceInTop = keyframes`
   0% {
-    transform: scale(1,1) translate(0px, 0px);
+    transform: scale(1,.8) translate(0px, 0px);
   }
   
   30%{
-    transform: scale(1,0.9) translate(0px, 10px); 
+    transform: scale(1,0.75) translate(0px, 5px); 
   }
 
   75%{
-    transform: scale(1,1.1) translate(0px, -25px); 
+    transform: scale(1,.9) translate(0px, -20px); 
   }
   
   100% {
-    transform: scale(1,1) translate(0px, 0px);
+    transform: scale(1,.8) translate(0px, 0px);
   }
 `
 export const Container = styled.div`
@@ -73,7 +73,7 @@ export const LinkContainer = styled.div`
   justify-content: center;
   margin-top: 16px;
   
-	animation: ${BounceInTop} 1.1s ease-out infinite;
+	animation: ${BounceInTop} 1.2s ease-out infinite;
 
   @media (min-width: 768px) {
     justify-content: left;
